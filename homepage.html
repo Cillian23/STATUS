@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>   <!--Setup and linking relevant pages-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student</title>
+    <h1>Welcome Student</h1>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="Login" href="index.html"/>
+</head>
+<body>
+    <div class="menu">  <!--Menu for student page options-->
+    <div class="box">  <!--Box class provides background box for css purposes-->
+    <button class="men viewtop">View Topic</button>  <!--View topic button-->
+    <br/>
+    <button class="men prof">Edit Profile</button>   <!--Edit profile button-->
+    <br/>
+    <button class="men thes">View Thesis</button>    <!--Thesis status button-->
+</div>
+</div>
+
+<div class="box">  <!--Box class provides background box for css purposes-->
+<div class="popup inactive">  <!--Popup contains all menu options within a central popup-->
+    <button class="popbtn">X</button>
+<div class="topic inactive">  <!--View topic-->
+    Your topic is <var>Topic</var>
+    <var>description</var>
+    Members are <var>members</var>
+</div>
+<div class="deets inactive">  <!--Edit profile-->
+    <label for="addr">Postal Address</label>
+    <input type="text" placeholder="123, maizonos, Patra" name="addr" id="addr" >
+    <br/>
+    <label for="email">Email</label>
+    <input type="text" placeholder="Kostas@upatras.gr" name="email" id="email" >
+    <br/>
+    <label for="mobile">Mobile Number</label>
+    <input type="text" placeholder="+30 1234567" name="mobile" id="mobile" >
+    <br/>
+    <label for="landline">Landline Number</label>
+    <input type="number" name="landline" id="landline">
+    <br/>
+      <button type="submit">Save</button>
+      <button name="cancel">Cancel</button>
+  </div>
+  <div  class="thesis assigning inactive">  <!--Thesis status-->
+    <label>
+        Select your preffered instructors
+    </label>
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+</div>
+<div  class="thesis progressing inactive">
+    <label>
+        You are currently working on it
+    </label>
+</div>
+<div  class="thesis completed inactive">
+    <label>
+        Grade Under review
+    </label>
+</div>
+</div>
+</div>
+      
+    <form>  <!--Log out button to return to Login Page-->
+        <button class="out" type="submit" formaction="index.html">Log Out</button>
+    </form>
+
+    <script src="app.js" defer></script> <!--Lets all elements load before javascript code kicks in-->
+</body>
+</html>

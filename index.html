@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STATUS</title>
+    <h1>Welcome to STATUS</h1>
+    <link rel="stylesheet" href="styles.css"/> 
+    <link rel="studentPage" href="homepage.html"/>
+</head>
+<body>
+     
+    <form class="popup">  <!--Popup contains all menu options within a central popup-->
+    <label for="uname"> <b>Enter username:</b> </label>  <!--Enter username-->
+    <input
+      class="form-label"
+      type="text"
+      id="uname"
+      name="name"
+      placeholder="E.g. Anon@gmail.com"/>
+      <br/>
+    <label for="pword"> <b>Enter password:</b> </label>  <!--Enter password-->
+    <input
+      type="password"
+      id="pword"
+      name="password"
+      placeholder="*********"/>
+      <br/>
+
+    <button type="submit" formaction="homepage.html">Login</button>  <!--Loads Student page on login, obviously not permanent-->
+
+    </form>
+    <script src = "app.js"></script>  <!--Refers to javascript file for instructions-->
+    
+</body>
+</html>
